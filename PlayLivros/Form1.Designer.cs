@@ -1,6 +1,6 @@
 ﻿namespace PlayLivros
 {
-    partial class Form1
+    partial class Fomr1
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fomr1));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblEmailLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
@@ -41,11 +41,11 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Futura Bk BT", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(67, 24);
+            this.lblTitulo.Location = new System.Drawing.Point(67, 29);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(262, 39);
+            this.lblTitulo.Size = new System.Drawing.Size(249, 39);
             this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "PlayBurger::Login";
+            this.lblTitulo.Text = "PlayLivros::Login";
             // 
             // lblEmailLogin
             // 
@@ -72,6 +72,7 @@
             this.txbSenha.Font = new System.Drawing.Font("Futura Bk BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSenha.Location = new System.Drawing.Point(145, 150);
             this.txbSenha.Name = "txbSenha";
+            this.txbSenha.PasswordChar = '*';
             this.txbSenha.Size = new System.Drawing.Size(184, 23);
             this.txbSenha.TabIndex = 3;
             // 
@@ -92,13 +93,14 @@
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "ENTRAR";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // Form1
+            // Fomr1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PlayLivros.Properties.Resources.biblioteca;
-            this.ClientSize = new System.Drawing.Size(368, 242);
+            this.ClientSize = new System.Drawing.Size(378, 275);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.txbSenha);
@@ -107,9 +109,9 @@
             this.Controls.Add(this.lblTitulo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Fomr1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Menu principal";
             this.ResumeLayout(false);
             this.PerformLayout();
 

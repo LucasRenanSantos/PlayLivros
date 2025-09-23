@@ -54,6 +54,7 @@
             this.lblDevolver.TabIndex = 3;
             this.lblDevolver.Text = "Devolver";
             this.lblDevolver.UseVisualStyleBackColor = true;
+            this.lblDevolver.Click += new System.EventHandler(this.lblDevolver_Click);
             // 
             // btnCadastrar
             // 
@@ -63,6 +64,7 @@
             this.btnCadastrar.TabIndex = 4;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnEmprestar
             // 
@@ -72,6 +74,7 @@
             this.btnEmprestar.TabIndex = 5;
             this.btnEmprestar.Text = "Emprestar livro";
             this.btnEmprestar.UseVisualStyleBackColor = true;
+            this.btnEmprestar.Click += new System.EventHandler(this.btnEmprestar_Click);
             // 
             // lblDescricao
             // 
@@ -97,6 +100,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormsUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormsUsuarios";
