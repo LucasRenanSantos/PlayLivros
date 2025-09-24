@@ -13,6 +13,7 @@ namespace PlayLivros.Model
     {
         public int Id { get; set; }
         public string TituloLivro { get; set; }
+        public string CategoriaLivros { get; set; }
   
 
         /* Cadastrar

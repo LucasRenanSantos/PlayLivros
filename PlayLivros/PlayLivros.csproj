@@ -113,6 +113,7 @@
     </Compile>
     <Compile Include="Model\BancoDeDados.cs" />
     <Compile Include="Model\Livros.cs" />
+    <Compile Include="Model\LivrosCategoria.cs" />
     <Compile Include="Model\Usuarios.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
