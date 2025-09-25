@@ -24,7 +24,7 @@ namespace PlayLivros.Model
 
         public DataTable Listar()
         {
-            string comando = "SELECT id, titulo_livro FROM livros";
+            string comando = "SELECT *  FROM livros";
 
             BancoDados conexaoBD = new BancoDados();
             MySqlConnection con = conexaoBD.ObterConexao();
@@ -37,13 +37,12 @@ namespace PlayLivros.Model
         }
         public bool Cadastrar()
         {
-            string comando = "INSERT INTO livros (id, titulo_livro) VALUES " +
-                "(@titulo_livro, @id)";
+            string comando = "INSERT INTO livros (titulo_livro) VALUES " +
+                "(@titulo_livro)";
             BancoDados conexaoBD = new BancoDados();
             MySqlConnection con = conexaoBD.ObterConexao();
             MySqlCommand cmd = new MySqlCommand(comando, con);
 
-            cmd.Parameters.AddWithValue("@id", Id);
             cmd.Parameters.AddWithValue("@titulo_livro", TituloLivro);
             
             cmd.Prepare();

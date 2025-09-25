@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormsUsuarios));
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblDevolver = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnEmprestar = new System.Windows.Forms.Button();
             this.lblDescricao = new System.Windows.Forms.Label();
@@ -46,19 +45,9 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Menu Inicial";
             // 
-            // lblDevolver
-            // 
-            this.lblDevolver.Location = new System.Drawing.Point(303, 267);
-            this.lblDevolver.Name = "lblDevolver";
-            this.lblDevolver.Size = new System.Drawing.Size(180, 46);
-            this.lblDevolver.TabIndex = 3;
-            this.lblDevolver.Text = "Devolver";
-            this.lblDevolver.UseVisualStyleBackColor = true;
-            this.lblDevolver.Click += new System.EventHandler(this.lblDevolver_Click);
-            // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(303, 344);
+            this.btnCadastrar.Location = new System.Drawing.Point(303, 276);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(180, 46);
             this.btnCadastrar.TabIndex = 4;
@@ -94,7 +83,6 @@
             this.Controls.Add(this.lblDescricao);
             this.Controls.Add(this.btnEmprestar);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.lblDevolver);
             this.Controls.Add(this.lblTitulo);
             this.Font = new System.Drawing.Font("Futura Bk BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -112,7 +100,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Button lblDevolver;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnEmprestar;
         private System.Windows.Forms.Label lblDescricao;

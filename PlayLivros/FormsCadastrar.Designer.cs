@@ -62,6 +62,8 @@
             this.dgvCadastroLivro.Name = "dgvCadastroLivro";
             this.dgvCadastroLivro.Size = new System.Drawing.Size(609, 367);
             this.dgvCadastroLivro.TabIndex = 0;
+            this.dgvCadastroLivro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCadastroLivro_CellClick);
+            this.dgvCadastroLivro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCadastroLivro_CellContentClick);
             // 
             // grbCadastrarLivro
             // 
@@ -221,6 +223,7 @@
             this.btnApagar.TabIndex = 0;
             this.btnApagar.Text = "APAGAR";
             this.btnApagar.UseVisualStyleBackColor = false;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // FormsCadastrar
             // 

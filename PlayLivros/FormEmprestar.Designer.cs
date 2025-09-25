@@ -29,177 +29,42 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmprestar));
-            this.grbDescricaoEmprestar = new System.Windows.Forms.GroupBox();
-            this.lblDescricaoEMP = new System.Windows.Forms.Label();
-            this.btnApagarEMP = new System.Windows.Forms.Button();
-            this.grbEditarEmprestar = new System.Windows.Forms.GroupBox();
-            this.btnEditarEMP = new System.Windows.Forms.Button();
-            this.TxbEditarTituloEMP = new System.Windows.Forms.TextBox();
-            this.cmbEditarClasseEMP = new System.Windows.Forms.ComboBox();
-            this.lblEditarClasseEMP = new System.Windows.Forms.Label();
-            this.lblEditarTituloEMP = new System.Windows.Forms.Label();
-            this.grbEmprestarLivro = new System.Windows.Forms.GroupBox();
+            this.grbEmprestarDevolverLivro = new System.Windows.Forms.GroupBox();
             this.btnCadastarLivroEMP = new System.Windows.Forms.Button();
-            this.txbTituloLivroEMP = new System.Windows.Forms.TextBox();
-            this.cmbCadastrarEMP = new System.Windows.Forms.ComboBox();
-            this.lblNomeTituloEMP = new System.Windows.Forms.Label();
-            this.lblClasseEMP = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvEmprestarLivro = new System.Windows.Forms.DataGridView();
-            this.grbDescricaoEmprestar.SuspendLayout();
-            this.grbEditarEmprestar.SuspendLayout();
-            this.grbEmprestarLivro.SuspendLayout();
+            this.btnDevolver = new System.Windows.Forms.Button();
+            this.grbDevolvervolução = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbldevolverLivro = new System.Windows.Forms.Label();
+            this.txbLivrodevolver = new System.Windows.Forms.TextBox();
+            this.grbEmprestarDevolverLivro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmprestarLivro)).BeginInit();
+            this.grbDevolvervolução.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grbDescricaoEmprestar
+            // grbEmprestarDevolverLivro
             // 
-            this.grbDescricaoEmprestar.Controls.Add(this.lblDescricaoEMP);
-            this.grbDescricaoEmprestar.Controls.Add(this.btnApagarEMP);
-            this.grbDescricaoEmprestar.Location = new System.Drawing.Point(11, 550);
-            this.grbDescricaoEmprestar.Name = "grbDescricaoEmprestar";
-            this.grbDescricaoEmprestar.Size = new System.Drawing.Size(612, 75);
-            this.grbDescricaoEmprestar.TabIndex = 10;
-            this.grbDescricaoEmprestar.TabStop = false;
-            this.grbDescricaoEmprestar.Text = "Apagar";
-            // 
-            // lblDescricaoEMP
-            // 
-            this.lblDescricaoEMP.AutoSize = true;
-            this.lblDescricaoEMP.Location = new System.Drawing.Point(9, 42);
-            this.lblDescricaoEMP.Name = "lblDescricaoEMP";
-            this.lblDescricaoEMP.Size = new System.Drawing.Size(29, 13);
-            this.lblDescricaoEMP.TabIndex = 1;
-            this.lblDescricaoEMP.Text = "lable";
-            // 
-            // btnApagarEMP
-            // 
-            this.btnApagarEMP.BackColor = System.Drawing.Color.IndianRed;
-            this.btnApagarEMP.Location = new System.Drawing.Point(293, 22);
-            this.btnApagarEMP.Name = "btnApagarEMP";
-            this.btnApagarEMP.Size = new System.Drawing.Size(295, 36);
-            this.btnApagarEMP.TabIndex = 0;
-            this.btnApagarEMP.Text = "APAGAR";
-            this.btnApagarEMP.UseVisualStyleBackColor = false;
-            // 
-            // grbEditarEmprestar
-            // 
-            this.grbEditarEmprestar.Controls.Add(this.btnEditarEMP);
-            this.grbEditarEmprestar.Controls.Add(this.TxbEditarTituloEMP);
-            this.grbEditarEmprestar.Controls.Add(this.cmbEditarClasseEMP);
-            this.grbEditarEmprestar.Controls.Add(this.lblEditarClasseEMP);
-            this.grbEditarEmprestar.Controls.Add(this.lblEditarTituloEMP);
-            this.grbEditarEmprestar.Location = new System.Drawing.Point(304, 381);
-            this.grbEditarEmprestar.Margin = new System.Windows.Forms.Padding(4);
-            this.grbEditarEmprestar.Name = "grbEditarEmprestar";
-            this.grbEditarEmprestar.Padding = new System.Windows.Forms.Padding(4);
-            this.grbEditarEmprestar.Size = new System.Drawing.Size(319, 162);
-            this.grbEditarEmprestar.TabIndex = 9;
-            this.grbEditarEmprestar.TabStop = false;
-            this.grbEditarEmprestar.Text = "Editar";
-            // 
-            // btnEditarEMP
-            // 
-            this.btnEditarEMP.Location = new System.Drawing.Point(10, 110);
-            this.btnEditarEMP.Name = "btnEditarEMP";
-            this.btnEditarEMP.Size = new System.Drawing.Size(285, 35);
-            this.btnEditarEMP.TabIndex = 6;
-            this.btnEditarEMP.Text = "EDITAR";
-            this.btnEditarEMP.UseVisualStyleBackColor = true;
-            // 
-            // TxbEditarTituloEMP
-            // 
-            this.TxbEditarTituloEMP.Location = new System.Drawing.Point(96, 31);
-            this.TxbEditarTituloEMP.Name = "TxbEditarTituloEMP";
-            this.TxbEditarTituloEMP.Size = new System.Drawing.Size(199, 20);
-            this.TxbEditarTituloEMP.TabIndex = 6;
-            // 
-            // cmbEditarClasseEMP
-            // 
-            this.cmbEditarClasseEMP.FormattingEnabled = true;
-            this.cmbEditarClasseEMP.Location = new System.Drawing.Point(96, 78);
-            this.cmbEditarClasseEMP.Name = "cmbEditarClasseEMP";
-            this.cmbEditarClasseEMP.Size = new System.Drawing.Size(199, 21);
-            this.cmbEditarClasseEMP.TabIndex = 6;
-            // 
-            // lblEditarClasseEMP
-            // 
-            this.lblEditarClasseEMP.AutoSize = true;
-            this.lblEditarClasseEMP.Location = new System.Drawing.Point(7, 81);
-            this.lblEditarClasseEMP.Name = "lblEditarClasseEMP";
-            this.lblEditarClasseEMP.Size = new System.Drawing.Size(71, 13);
-            this.lblEditarClasseEMP.TabIndex = 1;
-            this.lblEditarClasseEMP.Text = "Editar Classe:";
-            // 
-            // lblEditarTituloEMP
-            // 
-            this.lblEditarTituloEMP.AutoSize = true;
-            this.lblEditarTituloEMP.Location = new System.Drawing.Point(7, 34);
-            this.lblEditarTituloEMP.Name = "lblEditarTituloEMP";
-            this.lblEditarTituloEMP.Size = new System.Drawing.Size(66, 13);
-            this.lblEditarTituloEMP.TabIndex = 0;
-            this.lblEditarTituloEMP.Text = "Editar Titulo:";
-            // 
-            // grbEmprestarLivro
-            // 
-            this.grbEmprestarLivro.Controls.Add(this.btnCadastarLivroEMP);
-            this.grbEmprestarLivro.Controls.Add(this.txbTituloLivroEMP);
-            this.grbEmprestarLivro.Controls.Add(this.cmbCadastrarEMP);
-            this.grbEmprestarLivro.Controls.Add(this.lblNomeTituloEMP);
-            this.grbEmprestarLivro.Controls.Add(this.lblClasseEMP);
-            this.grbEmprestarLivro.Controls.Add(this.label3);
-            this.grbEmprestarLivro.Location = new System.Drawing.Point(13, 381);
-            this.grbEmprestarLivro.Margin = new System.Windows.Forms.Padding(4);
-            this.grbEmprestarLivro.Name = "grbEmprestarLivro";
-            this.grbEmprestarLivro.Padding = new System.Windows.Forms.Padding(4);
-            this.grbEmprestarLivro.Size = new System.Drawing.Size(283, 162);
-            this.grbEmprestarLivro.TabIndex = 8;
-            this.grbEmprestarLivro.TabStop = false;
-            this.grbEmprestarLivro.Text = "Cadastrar";
+            this.grbEmprestarDevolverLivro.Controls.Add(this.btnCadastarLivroEMP);
+            this.grbEmprestarDevolverLivro.Controls.Add(this.label3);
+            this.grbEmprestarDevolverLivro.Location = new System.Drawing.Point(14, 381);
+            this.grbEmprestarDevolverLivro.Margin = new System.Windows.Forms.Padding(4);
+            this.grbEmprestarDevolverLivro.Name = "grbEmprestarDevolverLivro";
+            this.grbEmprestarDevolverLivro.Padding = new System.Windows.Forms.Padding(4);
+            this.grbEmprestarDevolverLivro.Size = new System.Drawing.Size(276, 184);
+            this.grbEmprestarDevolverLivro.TabIndex = 8;
+            this.grbEmprestarDevolverLivro.TabStop = false;
+            this.grbEmprestarDevolverLivro.Text = "Emprestar e Devolver ";
             // 
             // btnCadastarLivroEMP
             // 
-            this.btnCadastarLivroEMP.Location = new System.Drawing.Point(14, 110);
+            this.btnCadastarLivroEMP.Location = new System.Drawing.Point(7, 126);
             this.btnCadastarLivroEMP.Name = "btnCadastarLivroEMP";
-            this.btnCadastarLivroEMP.Size = new System.Drawing.Size(246, 35);
+            this.btnCadastarLivroEMP.Size = new System.Drawing.Size(271, 35);
             this.btnCadastarLivroEMP.TabIndex = 5;
-            this.btnCadastarLivroEMP.Text = "CADASTAR";
+            this.btnCadastarLivroEMP.Text = "EMPRESTAR LIVRO";
             this.btnCadastarLivroEMP.UseVisualStyleBackColor = true;
-            // 
-            // txbTituloLivroEMP
-            // 
-            this.txbTituloLivroEMP.Location = new System.Drawing.Point(83, 31);
-            this.txbTituloLivroEMP.Name = "txbTituloLivroEMP";
-            this.txbTituloLivroEMP.Size = new System.Drawing.Size(177, 20);
-            this.txbTituloLivroEMP.TabIndex = 4;
-            // 
-            // cmbCadastrarEMP
-            // 
-            this.cmbCadastrarEMP.FormattingEnabled = true;
-            this.cmbCadastrarEMP.Location = new System.Drawing.Point(61, 73);
-            this.cmbCadastrarEMP.Name = "cmbCadastrarEMP";
-            this.cmbCadastrarEMP.Size = new System.Drawing.Size(199, 21);
-            this.cmbCadastrarEMP.TabIndex = 3;
-            // 
-            // lblNomeTituloEMP
-            // 
-            this.lblNomeTituloEMP.AutoSize = true;
-            this.lblNomeTituloEMP.Location = new System.Drawing.Point(7, 34);
-            this.lblNomeTituloEMP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNomeTituloEMP.Name = "lblNomeTituloEMP";
-            this.lblNomeTituloEMP.Size = new System.Drawing.Size(58, 13);
-            this.lblNomeTituloEMP.TabIndex = 0;
-            this.lblNomeTituloEMP.Text = "Titulo livro:";
-            // 
-            // lblClasseEMP
-            // 
-            this.lblClasseEMP.AutoSize = true;
-            this.lblClasseEMP.Location = new System.Drawing.Point(7, 76);
-            this.lblClasseEMP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblClasseEMP.Name = "lblClasseEMP";
-            this.lblClasseEMP.Size = new System.Drawing.Size(41, 13);
-            this.lblClasseEMP.TabIndex = 1;
-            this.lblClasseEMP.Text = "Classe:";
+            this.btnCadastarLivroEMP.Click += new System.EventHandler(this.btnCadastarLivroEMP_Click);
             // 
             // label3
             // 
@@ -220,51 +85,91 @@
             this.dgvEmprestarLivro.Name = "dgvEmprestarLivro";
             this.dgvEmprestarLivro.Size = new System.Drawing.Size(609, 367);
             this.dgvEmprestarLivro.TabIndex = 7;
+            this.dgvEmprestarLivro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmprestarDevolverLivro_CellClick);
+            // 
+            // btnDevolver
+            // 
+            this.btnDevolver.Location = new System.Drawing.Point(5, 126);
+            this.btnDevolver.Name = "btnDevolver";
+            this.btnDevolver.Size = new System.Drawing.Size(264, 35);
+            this.btnDevolver.TabIndex = 6;
+            this.btnDevolver.Text = "DEVOLVER LIVRO";
+            this.btnDevolver.UseVisualStyleBackColor = true;
+            this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
+            // 
+            // grbDevolvervolução
+            // 
+            this.grbDevolvervolução.Controls.Add(this.txbLivrodevolver);
+            this.grbDevolvervolução.Controls.Add(this.lbldevolverLivro);
+            this.grbDevolvervolução.Controls.Add(this.label1);
+            this.grbDevolvervolução.Controls.Add(this.btnDevolver);
+            this.grbDevolvervolução.Location = new System.Drawing.Point(317, 381);
+            this.grbDevolvervolução.Margin = new System.Windows.Forms.Padding(4);
+            this.grbDevolvervolução.Name = "grbDevolvervolução";
+            this.grbDevolvervolução.Padding = new System.Windows.Forms.Padding(4);
+            this.grbDevolvervolução.Size = new System.Drawing.Size(276, 184);
+            this.grbDevolvervolução.TabIndex = 9;
+            this.grbDevolvervolução.TabStop = false;
+            this.grbDevolvervolução.Text = "Emprestar e Devolver ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 110);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 2;
+            // 
+            // lbldevolverLivro
+            // 
+            this.lbldevolverLivro.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
+            this.lbldevolverLivro.AutoSize = true;
+            this.lbldevolverLivro.Location = new System.Drawing.Point(51, 48);
+            this.lbldevolverLivro.Name = "lbldevolverLivro";
+            this.lbldevolverLivro.Size = new System.Drawing.Size(26, 13);
+            this.lbldevolverLivro.TabIndex = 7;
+            this.lbldevolverLivro.Text = "livro";
+            // 
+            // txbLivrodevolver
+            // 
+            this.txbLivrodevolver.Location = new System.Drawing.Point(92, 48);
+            this.txbLivrodevolver.Name = "txbLivrodevolver";
+            this.txbLivrodevolver.Size = new System.Drawing.Size(100, 20);
+            this.txbLivrodevolver.TabIndex = 8;
             // 
             // FormEmprestar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PlayLivros.Properties.Resources.biblioteca;
-            this.ClientSize = new System.Drawing.Size(636, 636);
-            this.Controls.Add(this.grbDescricaoEmprestar);
-            this.Controls.Add(this.grbEditarEmprestar);
-            this.Controls.Add(this.grbEmprestarLivro);
+            this.ClientSize = new System.Drawing.Size(770, 599);
+            this.Controls.Add(this.grbDevolvervolução);
+            this.Controls.Add(this.grbEmprestarDevolverLivro);
             this.Controls.Add(this.dgvEmprestarLivro);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "FormEmprestar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormEmprestar";
-            this.grbDescricaoEmprestar.ResumeLayout(false);
-            this.grbDescricaoEmprestar.PerformLayout();
-            this.grbEditarEmprestar.ResumeLayout(false);
-            this.grbEditarEmprestar.PerformLayout();
-            this.grbEmprestarLivro.ResumeLayout(false);
-            this.grbEmprestarLivro.PerformLayout();
+            this.grbEmprestarDevolverLivro.ResumeLayout(false);
+            this.grbEmprestarDevolverLivro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmprestarLivro)).EndInit();
+            this.grbDevolvervolução.ResumeLayout(false);
+            this.grbDevolvervolução.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox grbDescricaoEmprestar;
-        private System.Windows.Forms.Label lblDescricaoEMP;
-        private System.Windows.Forms.Button btnApagarEMP;
-        private System.Windows.Forms.GroupBox grbEditarEmprestar;
-        private System.Windows.Forms.Button btnEditarEMP;
-        private System.Windows.Forms.TextBox TxbEditarTituloEMP;
-        private System.Windows.Forms.ComboBox cmbEditarClasseEMP;
-        private System.Windows.Forms.Label lblEditarClasseEMP;
-        private System.Windows.Forms.Label lblEditarTituloEMP;
-        private System.Windows.Forms.GroupBox grbEmprestarLivro;
+        private System.Windows.Forms.GroupBox grbEmprestarDevolverLivro;
         private System.Windows.Forms.Button btnCadastarLivroEMP;
-        private System.Windows.Forms.TextBox txbTituloLivroEMP;
-        private System.Windows.Forms.ComboBox cmbCadastrarEMP;
-        private System.Windows.Forms.Label lblNomeTituloEMP;
-        private System.Windows.Forms.Label lblClasseEMP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvEmprestarLivro;
+        private System.Windows.Forms.Button btnDevolver;
+        private System.Windows.Forms.GroupBox grbDevolvervolução;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txbLivrodevolver;
+        private System.Windows.Forms.Label lbldevolverLivro;
     }
 }

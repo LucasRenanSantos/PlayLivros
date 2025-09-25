@@ -30,18 +30,18 @@ namespace PlayLivros
             Show(); // Mostrar a tela de login ao sair do menu principal
         }
 
-        private void lblDevolver_Click(object sender, EventArgs e)
-        {
-            FormDevolver formDevolver = new FormDevolver();
-            Hide(); // esconder a janela atual
-            formDevolver.ShowDialog(); // Mostrar o menuprincipal
+        //private void lblDevolver_Click(object sender, EventArgs e)
+        //{
+          //  FormDevolver formDevolver = new FormDevolver();
+            //Hide(); // esconder a janela atual
+            //formDevolver.ShowDialog(); // Mostrar o menuprincipal
 
-            Show(); // Mostrar a tela de login ao sair do menu principal
-        }
+            //Show(); // Mostrar a tela de login ao sair do menu principal
+        //}
 
         private void btnEmprestar_Click(object sender, EventArgs e)
         {
-            FormEmprestar formEmprestar = new FormEmprestar();
+            FormEmprestar formEmprestar = new FormEmprestar(usuarios);
             Hide(); // esconder a janela atual
             formEmprestar.ShowDialog(); // Mostrar o menuprincipal
 

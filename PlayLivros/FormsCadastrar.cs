@@ -14,14 +14,15 @@ namespace PlayLivros
     public partial class FormsCadastrar : Form
     {
         Model.Livros livros = new Model.Livros();
+        int idSelecionado = 0;
 
         public FormsCadastrar()
         {
             InitializeComponent();
-            AtualizarDgv();
+            Atualizardgv();
             ListarCategorisaCmb();
         }
-        public void AtualizarDgv()
+        public void Atualizardgv()
         {
             // Mostrar as informações do bd no datagridview 
             dgvCadastroLivro.DataSource = livros.Listar();
@@ -44,7 +45,7 @@ namespace PlayLivros
 
         public void btnCadastarLivro_Click(object sender, EventArgs e)
         {
-
+            Atualizardgv();
             if (txbTituloLivro.Text.Length < 5)
             {
                 MessageBox.Show(" O titulo do livro deve ter no minimo 5 caracteres",
@@ -67,7 +68,7 @@ namespace PlayLivros
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // atualizar o dgv:
-                    AtualizarDgv();
+                    Atualizardgv();
 
                     //apagar os campos de cadastro:
                     txbTituloLivro.Clear();
@@ -96,11 +97,13 @@ namespace PlayLivros
                 Model.Livros livroCadastroedt = new Model.Livros();
                 livroCadastroedt.TituloLivro = TxbEditarTitulo.Text;
                 livroCadastroedt.CategoriaLivros = (cmbEditarClasse.Text.Split('-')[0]);
+                livroCadastroedt.Id = idSelecionado;
 
                 if (livroCadastroedt.Modificar())
                 {
                     MessageBox.Show("Informações do LIVRO foram modificadas com sucesso!", "Show!",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Atualizardgv();
                 }
                 else
                 {
@@ -108,7 +111,64 @@ namespace PlayLivros
                                         "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
         }
-    }    
-}
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+            // Perguntar se o adimin realmente apagar o usuario
+            DialogResult r = MessageBox.Show(" Tem certeza que deseja emprestar  este produto",
+               "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if ( r == DialogResult.Yes)
+            {
+                // Prosseguir com a exclusão
+                Model.Livros livroApagar = new Model.Livros();
+                livroApagar.Id = idSelecionado;
+                if (livroApagar.Apagar())
+                {
+                    MessageBox.Show("livro emprestado com sucesso!", "Show!",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Atualizardgv();
+                    //chamar o resetar campo 
+                    
+
+                }
+                else
+                {
+                    MessageBox.Show("Falha ao emprestar o livro",
+                                    "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+    }
+
+        private void dgvCadastroLivro_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //pegar a linha selecionada:
+            int ls = dgvCadastroLivro.SelectedCells[0].RowIndex;
+
+            // colocar os valores da celulas nos txbs de edição
+            txbTituloLivro.Text = dgvCadastroLivro.Rows[ls].Cells[1].Value.ToString();
+            TxbEditarTitulo.Text = dgvCadastroLivro.Rows[ls].Cells[1].Value.ToString();
+
+            //Aemazenar o id do usuario: 
+            idSelecionado = (int)dgvCadastroLivro.Rows[ls].Cells[0].Value;
+
+            // Ativar o grbEditar
+
+            grbCadastrarLivro.Enabled = true;
+
+            // ajustes nom grbApagar
+            grbDescricao.Text = $"Apagar: {dgvCadastroLivro.Rows[ls].Cells[1].Value.ToString()}";
+
+            // Ativar o grbApagar:
+            grbEditar.Enabled = true;
+        }
+
+        private void dgvCadastroLivro_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
+  }
 

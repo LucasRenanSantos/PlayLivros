@@ -87,12 +87,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Fomr1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDevolver.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormDevolver.Designer.cs">
-      <DependentUpon>FormDevolver.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormEmprestar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +106,7 @@
       <DependentUpon>FormsUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\BancoDeDados.cs" />
+    <Compile Include="Model\EmprestimosLivros.cs" />
     <Compile Include="Model\Livros.cs" />
     <Compile Include="Model\LivrosCategoria.cs" />
     <Compile Include="Model\Usuarios.cs" />
@@ -119,9 +114,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Fomr1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormDevolver.resx">
-      <DependentUpon>FormDevolver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEmprestar.resx">
       <DependentUpon>FormEmprestar.cs</DependentUpon>
